@@ -9,8 +9,9 @@ import SkillShowcase from "@/components/SkillShowcase";
 import { useRecentlyViewed } from "@/contexts/RecentlyViewedContext";
 import { PROJECTS } from "@/constants/projects";
 
-export default function HomePage({ category, setCategory }) {
+export default function HomePage() {
   const { viewed } = useRecentlyViewed();
+  const [category, setCategory] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => setLoading(false), 800);
@@ -23,7 +24,6 @@ export default function HomePage({ category, setCategory }) {
   }, [category]);
 
   const featured = filtered.filter((p) => p.featured);
-  const trending = filtered.filter((p) => p.trending);
   const recent = filtered.filter((p) => p.recent);
   const recentViewed = viewed
     .map((id) => PROJECTS.find((p) => p.id === id))
@@ -60,10 +60,10 @@ export default function HomePage({ category, setCategory }) {
                 seeMoreLink="/projects"
               />
             )}
-            {trending.length > 0 && (
+            {filtered.length > 0 && (
               <ProjectRow
                 title="Projects"
-                projects={trending}
+                projects={filtered}
                 icon="trending_up"
                 showMore
                 seeMoreLink="/projects"

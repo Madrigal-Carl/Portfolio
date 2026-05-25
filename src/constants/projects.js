@@ -2,7 +2,6 @@ export const PROJECTS = [
   {
     id: 1,
     title: "ShopFlow E-Commerce",
-    dev: "Alex Chen",
     description:
       "Full-stack e-commerce platform with real-time inventory management, Stripe payments, and multi-vendor support",
     longDescription:
@@ -10,8 +9,6 @@ export const PROJECTS = [
     category: "fullstack",
     buildTime: "4 months",
     techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
-    rating: 4.8,
-    ratingCount: 2341,
     thumbnail: "http://static.photos/technology/320x240/10",
     screenshots: [
       "http://static.photos/technology/640x360/11",
@@ -21,7 +18,6 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "#",
     featured: true,
-    trending: true,
     recent: true,
     features: [
       "Product catalog with advanced filters",
@@ -35,7 +31,6 @@ export const PROJECTS = [
   {
     id: 2,
     title: "FitTrack Pro",
-    dev: "Alex Chen",
     description:
       "Fitness tracking mobile app with workout plans, nutrition logging, and wearable device integration",
     longDescription:
@@ -54,7 +49,6 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "#",
     featured: true,
-    trending: true,
     recent: false,
     features: [
       "Workout logging & history",
@@ -68,7 +62,6 @@ export const PROJECTS = [
   {
     id: 3,
     title: "DesignKit UI Library",
-    dev: "Alex Chen",
     description:
       "Open-source React component library with 50+ accessible, customizable components and dark mode support",
     longDescription:
@@ -87,7 +80,6 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "#",
     featured: false,
-    trending: true,
     recent: true,
     features: [
       "50+ accessible components",
@@ -101,7 +93,6 @@ export const PROJECTS = [
   {
     id: 4,
     title: "CloudNotes",
-    dev: "Alex Chen",
     description:
       "Real-time collaborative note-taking app with markdown, code snippets, and offline sync",
     longDescription:
@@ -134,7 +125,6 @@ export const PROJECTS = [
   {
     id: 5,
     title: "PortfolioForge",
-    dev: "Alex Chen",
     description:
       "Drag-and-drop portfolio builder for developers with curated templates and one-click deploy",
     longDescription:
@@ -167,7 +157,6 @@ export const PROJECTS = [
   {
     id: 6,
     title: "FreelanceHub CRM",
-    dev: "Alex Chen",
     description:
       "All-in-one CRM for freelancers with invoicing, time tracking, and automated payment reminders",
     longDescription:
@@ -186,7 +175,6 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "#",
     featured: false,
-    trending: true,
     recent: false,
     features: [
       "Client management",
@@ -200,7 +188,6 @@ export const PROJECTS = [
   {
     id: 7,
     title: "PixelEditor Online",
-    dev: "Alex Chen",
     description:
       "Browser-based image editor with layer support, 50+ filters, drawing tools, and offline capability",
     longDescription:
@@ -219,7 +206,6 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "#",
     featured: false,
-    trending: true,
     recent: false,
     features: [
       "Layer system",
@@ -233,7 +219,6 @@ export const PROJECTS = [
   {
     id: 8,
     title: "MealPrep AI",
-    dev: "Alex Chen",
     description:
       "AI-powered meal planning app with personalized plans, grocery lists, and nutritional tracking",
     longDescription:
@@ -252,7 +237,6 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "#",
     featured: true,
-    trending: true,
     recent: true,
     features: [
       "AI meal generation",
@@ -266,7 +250,6 @@ export const PROJECTS = [
   {
     id: 9,
     title: "DevBlog Engine",
-    dev: "Alex Chen",
     description:
       "Minimal blogging platform for developers with MDX, syntax highlighting, and RSS feeds",
     longDescription:
@@ -299,7 +282,6 @@ export const PROJECTS = [
   {
     id: 10,
     title: "TaskWave Kanban",
-    dev: "Alex Chen",
     description:
       "Kanban board with drag-and-drop, team collaboration, and GitHub/Slack integrations",
     longDescription:
