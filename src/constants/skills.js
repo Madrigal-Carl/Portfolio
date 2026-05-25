@@ -14,10 +14,10 @@ export const SKILLS = [
     category: "Frontend",
     icon: MdWeb,
     skills: [
-      { name: "ReactJS", months: 6, label: "0.5 yr" },
+      { name: "ReactJS", months: 6, label: "6 months" },
       { name: "HTML", months: 24, label: "2 yrs" },
       { name: "TailwindCSS", months: 12, label: "1 yr" },
-      { name: "JavaScript", months: 8, label: "0.7 yr" },
+      { name: "JavaScript", months: 8, label: "8 months" },
     ],
   },
 
@@ -25,9 +25,9 @@ export const SKILLS = [
     category: "Backend",
     icon: MdDns,
     skills: [
-      { name: "NodeJS", months: 6, label: "0.5 yr" },
-      { name: "ExpressJS", months: 6, label: "0.5 yr" },
-      { name: "PHP", months: 6, label: "0.5 yr" },
+      { name: "NodeJS", months: 6, label: "6 months" },
+      { name: "ExpressJS", months: 6, label: "6 months" },
+      { name: "PHP", months: 6, label: "6 months" },
     ],
   },
 
@@ -35,9 +35,9 @@ export const SKILLS = [
     category: "Frameworks",
     icon: MdLayers,
     skills: [
-      { name: "Laravel", months: 6, label: "0.5 yr" },
-      { name: "Livewire", months: 6, label: "0.5 yr" },
-      { name: "Flutter", months: 6, label: "0.5 yr" },
+      { name: "Laravel", months: 6, label: "6 months" },
+      { name: "Livewire", months: 4, label: "4 months" },
+      { name: "Flutter", months: 6, label: "6 months" },
     ],
   },
 
@@ -45,8 +45,8 @@ export const SKILLS = [
     category: "Mobile",
     icon: MdSmartphone,
     skills: [
-      { name: "Dart", months: 6, label: "0.5 yr" },
-      { name: "Android Studio", months: 2, label: "0.2 yr" },
+      { name: "Dart", months: 6, label: "6 months" },
+      { name: "Android Studio", months: 2, label: "2 months" },
     ],
   },
 
@@ -55,10 +55,10 @@ export const SKILLS = [
     icon: MdStorage,
     skills: [
       { name: "MySQL", months: 18, label: "1.5 yrs" },
-      { name: "MongoDB", months: 6, label: "0.5 yr" },
-      { name: "SQLite", months: 3, label: "0.25 yr" },
-      { name: "Sequelize ORM", months: 6, label: "0.5 yr" },
-      { name: "Mongoose", months: 6, label: "0.5 yr" },
+      { name: "MongoDB", months: 6, label: "6 months" },
+      { name: "SQLite", months: 3, label: "3 months" },
+      { name: "Sequelize ORM", months: 6, label: "6 months" },
+      { name: "Mongoose", months: 6, label: "6 months" },
     ],
   },
 
@@ -67,10 +67,10 @@ export const SKILLS = [
     icon: MdBuild,
     skills: [
       { name: "Git & GitHub", months: 18, label: "1.5 yrs" },
-      { name: "Docker", months: 6, label: "0.5 yr" },
+      { name: "Docker", months: 6, label: "6 months" },
       { name: "Postman", months: 18, label: "1.5 yrs" },
-      { name: "Vercel", months: 3, label: "0.25 yr" },
-      { name: "Render", months: 3, label: "0.25 yr" },
+      { name: "Vercel", months: 3, label: "3 months" },
+      { name: "Render", months: 3, label: "3 months" },
     ],
   },
 ];
