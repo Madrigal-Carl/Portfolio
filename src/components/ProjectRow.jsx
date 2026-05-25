@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
+import { MdArrowForward, MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 export default function ProjectRow({
   title,
@@ -40,9 +41,7 @@ export default function ProjectRow({
       <div className="flex items-center justify-between px-4 sm:px-6 mb-3">
         <div className="flex items-center gap-2">
           {icon && (
-            <span className="material-icons-outlined text-play-green dark:text-emerald-400 text-[20px]">
-              {icon}
-            </span>
+            <icon className="text-play-green dark:text-emerald-400 text-[20px]" />
           )}
           <h2 className="text-base md:text-lg font-medium text-gray-900 dark:text-gray-100">
             {title}
@@ -53,10 +52,7 @@ export default function ProjectRow({
             to={seeMoreLink || "/projects"}
             className="text-play-green dark:text-emerald-400 text-sm font-medium hover:underline flex items-center gap-1"
           >
-            See more{" "}
-            <span className="material-icons-outlined text-[16px]">
-              arrow_forward
-            </span>
+            See more <MdArrowForward className="text-[16px]" />
           </Link>
         )}
       </div>
@@ -66,9 +62,7 @@ export default function ProjectRow({
             onClick={() => scroll(-1)}
             className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white dark:bg-[#2d2d2d] shadow-lg border border-gray-200 dark:border-gray-600 items-center justify-center hover:scale-105 transition-transform hidden md:flex"
           >
-            <span className="material-icons-outlined text-[18px]">
-              chevron_left
-            </span>
+            <MdChevronLeft className="text-[18px]" />
           </button>
         )}
         <div
@@ -84,9 +78,7 @@ export default function ProjectRow({
             onClick={() => scroll(1)}
             className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white dark:bg-[#2d2d2d] shadow-lg border border-gray-200 dark:border-gray-600 items-center justify-center hover:scale-105 transition-transform hidden md:flex"
           >
-            <span className="material-icons-outlined text-[18px]">
-              chevron_right
-            </span>
+            <MdChevronRight className="text-[18px]" />
           </button>
         )}
       </div>

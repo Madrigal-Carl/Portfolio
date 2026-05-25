@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
 import { PROJECTS } from "@/constants/projects";
 import { CATEGORIES } from "@/constants/categories";
+import {
+  MdArrowBack,
+  MdNewReleases,
+  MdFolder,
+  MdFolderOff,
+} from "react-icons/md";
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -30,9 +36,7 @@ export default function ProjectsPage() {
             to="/"
             className="p-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-[#3c3c3c] transition-colors"
           >
-            <span className="material-icons-outlined text-gray-600 dark:text-gray-400 text-[22px]">
-              arrow_back
-            </span>
+            <MdArrowBack className="text-gray-600 dark:text-gray-400 text-[22px]" />
           </Link>
           <div>
             <h1 className="text-xl md:text-2xl font-medium text-gray-900 dark:text-gray-100">
@@ -53,7 +57,7 @@ export default function ProjectsPage() {
                 : "border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-[#2d2d2d]"
             }`}
           >
-            Recently Completed ({recentProjects.length})
+            Most Recent ({recentProjects.length})
           </button>
           <button
             onClick={() => setActiveTab("all")}
@@ -97,9 +101,7 @@ export default function ProjectsPage() {
 
         {activeTab === "recent" && (
           <div className="flex items-center gap-2 mb-4">
-            <span className="material-icons-outlined text-play-green dark:text-emerald-400 text-[20px]">
-              new_releases
-            </span>
+            <MdNewReleases className="text-play-green dark:text-emerald-400 text-[20px]" />
             <h2 className="text-base md:text-lg font-medium text-gray-900 dark:text-gray-100">
               Recently Completed
             </h2>
@@ -107,9 +109,7 @@ export default function ProjectsPage() {
         )}
         {activeTab === "all" && (
           <div className="flex items-center gap-2 mb-4">
-            <span className="material-icons-outlined text-play-green dark:text-emerald-400 text-[20px]">
-              folder
-            </span>
+            <MdFolder className="text-play-green dark:text-emerald-400 text-[20px]" />
             <h2 className="text-base md:text-lg font-medium text-gray-900 dark:text-gray-100">
               All Projects
             </h2>
@@ -118,9 +118,7 @@ export default function ProjectsPage() {
 
         {displayProjects.length === 0 ? (
           <div className="flex flex-col items-center py-16">
-            <span className="material-icons-outlined text-gray-300 dark:text-gray-600 text-[64px] mb-4">
-              folder_off
-            </span>
+            <MdFolderOff className="text-gray-300 dark:text-gray-600 text-[64px] mb-4" />
             <p className="text-gray-500 dark:text-gray-400 text-sm">
               No projects found in this category.
             </p>

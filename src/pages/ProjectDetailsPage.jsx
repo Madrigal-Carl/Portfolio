@@ -4,6 +4,13 @@ import { PROJECTS } from "@/constants/projects";
 import TechChip from "../components/TechChip";
 import ProjectRow from "../components/ProjectRow";
 import { useRecentlyViewed } from "@/contexts/RecentlyViewedContext";
+import {
+  MdArrowBack,
+  MdOpenInNew,
+  MdCode,
+  MdVisibility,
+  MdErrorOutline,
+} from "react-icons/md";
 
 export default function ProjectDetailsPage() {
   const { id } = useParams();
@@ -21,9 +28,7 @@ export default function ProjectDetailsPage() {
   if (!project)
     return (
       <div className="flex flex-col items-center py-20 px-4 sm:px-6">
-        <span className="material-icons-outlined text-gray-300 dark:text-gray-600 text-[64px] mb-4">
-          error_outline
-        </span>
+        <MdErrorOutline className="text-gray-300 dark:text-gray-600 text-[64px] mb-4" />
         <p className="text-gray-500 dark:text-gray-400">Project not found</p>
         <Link
           to="/"
@@ -41,16 +46,13 @@ export default function ProjectDetailsPage() {
   const hasLiveDemo = Boolean(project.liveDemo);
 
   return (
-    <div className="max-w-5xl mx-auto pb-20 md:pb-4">
+    <div className="max-w-5xl mx-auto pb-20 md:pb-4 mt-4 md:mt-0">
       <div className="hidden md:block px-4 sm:px-6">
         <button
           onClick={() => window.history.back()}
           className="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 py-3 text-sm transition-colors"
         >
-          <span className="material-icons-outlined text-[18px]">
-            arrow_back
-          </span>{" "}
-          Back
+          <MdArrowBack className="text-[18px]" /> Back
         </button>
       </div>
 
@@ -88,23 +90,16 @@ export default function ProjectDetailsPage() {
 
       <div className="px-4 sm:px-6">
         <div className="flex items-start gap-4 mb-4">
-          <img
-            src={project.thumbnail}
-            className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-cover shadow-md flex-shrink-0"
-          />
           <div className="flex-1 min-w-0">
             <h1 className="text-xl md:text-2xl font-medium text-gray-900 dark:text-gray-100">
               {project.title}
             </h1>
-            <div className="flex items-center gap-2 mt-1.5">
-              <span className="text-sm text-play-green dark:text-emerald-400 font-medium">
+            <div className="flex items-center gap-2">
+              <span className="text-play-green dark:text-emerald-400 font-medium">
                 {project.category.charAt(0).toUpperCase() +
                   project.category.slice(1)}
               </span>
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">
-              {project.description}
-            </p>
           </div>
         </div>
 
@@ -119,9 +114,7 @@ export default function ProjectDetailsPage() {
                 : "bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed pointer-events-none"
             }`}
           >
-            <span className="material-icons-outlined text-[18px]">
-              open_in_new
-            </span>
+            <MdOpenInNew className="text-[18px]" />
 
             {hasLiveDemo ? "View Project" : "No Live Demo"}
           </a>
@@ -129,7 +122,7 @@ export default function ProjectDetailsPage() {
             href={project.github}
             className="flex items-center justify-center gap-2 px-5 py-3 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-[#2d2d2d] transition-colors"
           >
-            <span className="material-icons-outlined text-[18px]">code</span>
+            <MdCode className="text-[18px]" />
             GitHub
           </a>
         </div>
@@ -222,9 +215,7 @@ export default function ProjectDetailsPage() {
               : "bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed pointer-events-none"
           }`}
         >
-          <span className="material-icons-outlined text-[18px]">
-            visibility
-          </span>
+          <MdVisibility className="text-[18px]" />
 
           {hasLiveDemo ? "View Project" : "No Demo"}
         </a>

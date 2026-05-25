@@ -8,6 +8,7 @@ import ProjectRow from "@/components/ProjectRow";
 import SkillShowcase from "@/components/SkillShowcase";
 import { useRecentlyViewed } from "@/contexts/RecentlyViewedContext";
 import { PROJECTS } from "@/constants/projects";
+import { MdHistory, MdNewReleases, MdTrendingUp, MdSend } from "react-icons/md";
 
 export default function HomePage() {
   const { viewed } = useRecentlyViewed();
@@ -47,7 +48,7 @@ export default function HomePage() {
               <ProjectRow
                 title="Recently Viewed"
                 projects={recentViewed}
-                icon="history"
+                icon={MdHistory}
                 showMore
               />
             )}
@@ -55,7 +56,7 @@ export default function HomePage() {
               <ProjectRow
                 title="Recently Completed"
                 projects={recent}
-                icon="new_releases"
+                icon={MdNewReleases}
                 showMore
                 seeMoreLink="/projects"
               />
@@ -64,7 +65,7 @@ export default function HomePage() {
               <ProjectRow
                 title="Projects"
                 projects={filtered}
-                icon="trending_up"
+                icon={MdTrendingUp}
                 showMore
                 seeMoreLink="/projects"
               />
@@ -82,9 +83,7 @@ export default function HomePage() {
                   to="/contact"
                   className="inline-flex items-center gap-2 bg-white text-play-green font-medium px-6 py-2.5 rounded-full text-sm hover:shadow-lg transition-shadow"
                 >
-                  <span className="material-icons-outlined text-[18px]">
-                    send
-                  </span>
+                  <MdSend className="text-[18px]" />
                   Get in Touch
                 </Link>
               </div>

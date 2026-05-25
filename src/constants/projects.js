@@ -35,7 +35,7 @@ export const PROJECTS = [
       "Fitness tracking mobile app with workout plans, nutrition logging, and wearable device integration",
     longDescription:
       "A feature-rich fitness tracking app that helps users monitor workouts, set goals, and track progress over time. Includes social features, workout plans, nutrition logging, and integration with popular wearable devices.",
-    category: "mobile",
+    category: "automation",
     buildTime: "3 months",
     techStack: ["React Native", "Firebase", "Redux", "Charts"],
     rating: 4.6,

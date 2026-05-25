@@ -12,7 +12,7 @@ export default function ProjectCard({ project, size = "normal" }) {
     <Link
       to={`/project/${project.id}`}
       onClick={() => addViewed(project.id)}
-      className="group flex-1 min-w-[140px] max-w-[220px]"
+      className="group flex-1 min-w-[160px] max-w-[220px]"
     >
       <div className="card-hover rounded-xl overflow-hidden bg-white dark:bg-[#2d2d2d] border border-gray-100 dark:border-gray-700 cursor-pointer h-full flex flex-col">
         <div

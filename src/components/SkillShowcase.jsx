@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { SKILLS, MAX_MONTHS } from "@/constants/skills";
 import SectionHeader from "@/components/SectionHeader";
+import { MdCode } from "react-icons/md";
 
 export default function SkillShowcase({ padded = false }) {
   const [visible, setVisible] = useState(false);
@@ -22,7 +23,7 @@ export default function SkillShowcase({ padded = false }) {
       ref={sectionRef}
       className={`mb-6 fade-up ${padded ? "px-4 sm:px-6" : ""}`}
     >
-      <SectionHeader icon="psychology">Skills Showcase</SectionHeader>
+      <SectionHeader icon={MdCode}>Expertise</SectionHeader>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {SKILLS.map((group) => (
           <div
@@ -31,9 +32,7 @@ export default function SkillShowcase({ padded = false }) {
           >
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-8 h-8 rounded-lg bg-play-green flex items-center justify-center shadow-sm">
-                <span className="material-icons-outlined text-white text-[16px]">
-                  {group.icon}
-                </span>
+                <group.icon className="text-white text-[16px]" />
               </div>
               <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200">
                 {group.category}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
+import { MdPlayArrow, MdLightMode, MdDarkMode } from "react-icons/md";
 
 export default function Navbar() {
   const { dark, setDark } = useTheme();
@@ -16,13 +17,11 @@ export default function Navbar() {
     return location.pathname.startsWith(path);
   };
   return (
-    <header className="sticky top-0 z-50 bg-white/95 dark:bg-[#1f1f1f]/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors">
+    <header className="sticky top-0 z-30 bg-white/95 dark:bg-[#1f1f1f]/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors">
       <div className="max-w-6xl mx-auto flex items-center h-14 md:h-[60px] px-4 sm:px-6 gap-4">
         <Link to="/" className="flex items-center gap-2 flex-shrink-0">
           <div className="w-8 h-8 play-green-grad rounded-lg flex items-center justify-center">
-            <span className="material-icons-outlined text-white text-[18px]">
-              play_arrow
-            </span>
+            <MdPlayArrow className="text-white text-[18px]" />
           </div>
           <span className="text-lg font-medium text-gray-900 dark:text-gray-100">
             PlayDev
@@ -50,9 +49,11 @@ export default function Navbar() {
             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#3c3c3c] transition-colors flex items-center"
             title={dark ? "Light mode" : "Dark mode"}
           >
-            <span className="material-icons-outlined text-gray-600 dark:text-gray-400 text-[22px]">
-              {dark ? "light_mode" : "dark_mode"}
-            </span>
+            {dark ? (
+              <MdLightMode className="text-gray-600 dark:text-gray-400 text-[22px]" />
+            ) : (
+              <MdDarkMode className="text-gray-600 dark:text-gray-400 text-[22px]" />
+            )}
           </button>
           <Link
             to="/about"

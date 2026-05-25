@@ -1,34 +1,18 @@
 export const EXPERIENCE = [
   {
-    title: "Senior Frontend Engineer",
-    company: "TechCorp Inc.",
-    period: "2022 - Present",
+    title: "OJT Intern / Full-Stack Developer",
+    company: "Informatics International College",
+    period: "Jan – April 2026",
     description:
-      "Lead frontend architecture for enterprise SaaS platform serving 50K+ users.",
-    tech: ["React", "TypeScript", "GraphQL"],
+      "Led a student development team in delivering multiple software projects during internship. Developed SwiftDocs for document request automation, built Tableo for event scoring and ranking systems, and contributed to a Power Automate solution for lead tracking and email automation using Agile methodology.",
+    tech: ["React.js", "Node.js", "Express.js", "MySQL", "Docker", "Agile"],
   },
   {
-    title: "Full Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2022",
+    title: "Freelance Full-Stack Developer",
+    company: "Self-Employed",
+    period: "2024 – Present",
     description:
-      "Built and maintained multiple microservices and client applications from scratch.",
-    tech: ["Node.js", "React", "PostgreSQL"],
-  },
-  {
-    title: "Frontend Developer",
-    company: "DesignStudio",
-    period: "2018 - 2020",
-    description:
-      "Created responsive web applications and design systems for diverse clients.",
-    tech: ["Vue.js", "SCSS", "JavaScript"],
-  },
-  {
-    title: "Junior Developer",
-    company: "WebAgency",
-    period: "2016 - 2018",
-    description:
-      "Developed WordPress themes and custom web solutions for small businesses.",
-    tech: ["HTML", "CSS", "PHP"],
+      "Developed and deployed full-stack web and mobile applications using modern frameworks. Designed database architectures, implemented REST APIs, and maintained production systems. Collaborated with clients for requirement analysis, prototyping, and deployment.",
+    tech: ["Laravel", "Livewire", "Flutter", "MySQL", "REST API"],
   },
 ];
