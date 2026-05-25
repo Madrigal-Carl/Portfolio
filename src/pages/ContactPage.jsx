@@ -12,9 +12,12 @@ import {
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa6";
 import { FaRegAddressCard } from "react-icons/fa6";
 import resume from "@/assets/resume.pdf";
+import { sendEmail } from "@/services/email.service";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,11 +28,29 @@ export default function ContactPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
-    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    try {
+      setLoading(true);
+
+      await sendEmail(formData);
+
+      setSent(true);
+
+      setTimeout(() => setSent(false), 3000);
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      alert("Failed to send message.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const socialLinks = [
@@ -139,10 +160,11 @@ export default function ContactPage() {
             </div>
             <button
               type="submit"
+              disabled={loading}
               className="w-full flex items-center justify-center gap-2 bg-play-green hover:bg-play-greenDark text-white font-medium py-3 rounded-lg text-sm transition-colors shadow-sm"
             >
               <FiSend className="text-[18px]" />
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
