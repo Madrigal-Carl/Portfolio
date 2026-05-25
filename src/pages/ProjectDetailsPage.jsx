@@ -59,7 +59,7 @@ export default function ProjectDetailsPage() {
       <div className="relative mx-4 sm:mx-6 rounded-2xl overflow-hidden mb-6">
         <div className="h-[180px] md:h-[260px]">
           <img
-            src={allScreenshots[ssIndex + 1] || project.thumbnail}
+            src={allScreenshots[ssIndex] || project.thumbnail}
             alt={project.title}
             className="w-full h-full object-cover"
             onLoad={() => setImgLoading(false)}
