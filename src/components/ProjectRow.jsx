@@ -6,7 +6,7 @@ import { MdArrowForward, MdChevronLeft, MdChevronRight } from "react-icons/md";
 export default function ProjectRow({
   title,
   projects,
-  icon,
+  icon: Icon,
   showMore,
   seeMoreLink,
 }) {
@@ -40,8 +40,8 @@ export default function ProjectRow({
     <section className="mb-6 fade-up">
       <div className="flex items-center justify-between px-4 sm:px-6 mb-3">
         <div className="flex items-center gap-2">
-          {icon && (
-            <icon className="text-play-green dark:text-emerald-400 text-[20px]" />
+          {Icon && (
+            <Icon className="text-play-green dark:text-emerald-400 text-[20px]" />
           )}
           <h2 className="text-base md:text-lg font-medium text-gray-900 dark:text-gray-100">
             {title}

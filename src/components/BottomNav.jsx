@@ -42,9 +42,7 @@ export default function BottomNav() {
     <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-[#1f1f1f] border-t border-gray-200 dark:border-gray-700">
       <div className="flex items-center justify-around h-14">
         {items.map((item) => {
-          const active =
-            location.pathname === item.path ||
-            (item.path === "/" && location.pathname.startsWith("/project"));
+          const active = location.pathname === item.path;
           const Icon = active ? item.activeIcon : item.icon;
           return (
             <Link

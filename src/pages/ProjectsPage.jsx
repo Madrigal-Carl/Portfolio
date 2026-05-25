@@ -51,7 +51,7 @@ export default function ProjectsPage() {
         <div className="flex gap-2 mb-6">
           <button
             onClick={() => setActiveTab("recent")}
-            className={`px-5 py-2 rounded-full text-sm font-medium border transition-all ${
+            className={`px-5 py-2 rounded-full text-sm font-medium border transition-all whitespace-nowrap ${
               activeTab === "recent"
                 ? "chip-active"
                 : "border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-[#2d2d2d]"
@@ -61,7 +61,7 @@ export default function ProjectsPage() {
           </button>
           <button
             onClick={() => setActiveTab("all")}
-            className={`px-5 py-2 rounded-full text-sm font-medium border transition-all ${
+            className={`px-5 py-2 rounded-full text-sm font-medium border transition-all whitespace-nowrap ${
               activeTab === "all"
                 ? "chip-active"
                 : "border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-[#2d2d2d]"
@@ -126,7 +126,12 @@ export default function ProjectsPage() {
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
             {displayProjects.map((p) => (
-              <ProjectCard key={p.id} project={p} size="small" />
+              <ProjectCard
+                key={p.id}
+                project={p}
+                size="small"
+                minWidth="145px"
+              />
             ))}
           </div>
         )}
