@@ -90,28 +90,15 @@ export default function AboutPage() {
         <SectionHeader icon={MdWavingHand}>Introduction</SectionHeader>
 
         <div className="bg-gray-50 dark:bg-[#2d2d2d] rounded-xl p-4 sm:p-5 border border-gray-200 dark:border-gray-700">
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
-            Hi! I'm Carl Salido Madrigal, an entry-level Full-Stack Developer
-            based in the Philippines. I specialize in building web and mobile
-            applications using React, Node.js, Laravel, and Flutter, with a
-            strong focus on mvc architecture, performance, and user-friendly
-            design.
-          </p>
-
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
-            I have hands-on experience developing full-stack systems through
-            internships, freelance work, and academic projects. I’ve worked on
-            platforms such as document management systems, event tabulation
-            tools, mobile learning apps, and inventory solutions, covering both
-            frontend and backend development.
-          </p>
-
           <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-            I enjoy working across the entire development lifecycle—from
-            database design and API development to UI implementation and
-            deployment. I’m currently seeking opportunities where I can grow as
-            a developer, contribute to real-world systems, and continue
-            improving my technical skills.
+            Hi! I'm Carl Salido Madrigal, an entry-level Full-Stack Developer
+            from the Philippines specializing in React, Node.js, Laravel, and
+            Flutter. I have hands-on experience building web and mobile
+            applications through internships, freelance work, and academic
+            projects, with a focus on full-stack development, REST APIs,
+            database design, MVC architecture, and user-friendly systems. I'm
+            currently seeking opportunities to grow as a developer and
+            contribute to real-world projects.
           </p>
         </div>
       </section>
