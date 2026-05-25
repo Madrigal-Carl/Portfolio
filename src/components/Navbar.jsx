@@ -24,7 +24,7 @@ export default function Navbar() {
             <MdPlayArrow className="text-white text-[18px]" />
           </div>
           <span className="text-lg font-medium text-gray-900 dark:text-gray-100">
-            PlayDev
+            Project Store
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-1 ml-8">

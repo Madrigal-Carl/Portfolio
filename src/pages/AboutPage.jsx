@@ -24,6 +24,7 @@ import {
   MdWavingHand,
 } from "react-icons/md";
 import { FaAward } from "react-icons/fa6";
+import hero from "@/assets/hero.png";
 
 export default function AboutPage() {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -48,9 +49,11 @@ export default function AboutPage() {
       {/* Profile Header */}
       <div className="bg-gray-50 dark:bg-[#2d2d2d] rounded-2xl p-5 sm:p-7 border border-gray-200 dark:border-gray-700 fade-up">
         <div className="flex flex-col md:flex-row items-center gap-5">
-          <div className="w-28 h-28 md:w-32 md:h-32 rounded-full play-green-grad flex items-center justify-center text-white text-4xl font-medium shadow-lg flex-shrink-0">
-            CM
-          </div>
+          <img
+            src={hero}
+            alt="Carl Madrigal"
+            className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border"
+          />
           <div className="text-center md:text-left">
             <h1 className="text-2xl md:text-3xl font-medium text-gray-900 dark:text-gray-100">
               Carl Madrigal

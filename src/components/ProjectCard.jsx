@@ -5,7 +5,7 @@ import TechChip from "@/components/TechChip";
 export default function ProjectCard({
   project,
   size = "normal",
-  minWidth = "160px",
+  minWidth = "170px",
 }) {
   const { addViewed } = useRecentlyViewed();
   const isSmall = size === "small";
@@ -16,7 +16,8 @@ export default function ProjectCard({
     <Link
       to={`/project/${project.id}`}
       onClick={() => addViewed(project.id)}
-      className={`group flex-1 min-w-[${minWidth}] max-w-[220px]`}
+      className="group flex-1 max-w-[220px]"
+      style={{ minWidth }}
     >
       <div className="card-hover rounded-xl overflow-hidden bg-white dark:bg-[#2d2d2d] border border-gray-100 dark:border-gray-700 cursor-pointer h-full flex flex-col">
         <div
