@@ -46,7 +46,6 @@ export const SKILLS = [
     icon: MdSmartphone,
     skills: [
       { name: "Dart", months: 6, label: "0.5 yr" },
-      { name: "Java", months: 3, label: "0.25 yr" },
       { name: "Android Studio", months: 2, label: "0.2 yr" },
     ],
   },
