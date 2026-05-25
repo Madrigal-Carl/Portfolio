@@ -59,7 +59,7 @@ export default function AboutPage() {
               Carl Madrigal
             </h1>
             <p className="text-play-green dark:text-emerald-400 font-medium mt-1">
-              Web Developer
+              Full Stack Developer
             </p>
             <div className="flex items-center gap-4 mt-4 justify-center md:justify-start">
               <a
