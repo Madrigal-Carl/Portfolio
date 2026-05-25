@@ -7,9 +7,11 @@ import {
   FiDownload,
   FiFileText,
   FiMail,
+  FiPhone,
 } from "react-icons/fi";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa6";
 import { FaRegAddressCard } from "react-icons/fa6";
+import resume from "@/assets/resume.pdf";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
@@ -39,17 +41,17 @@ export default function ContactPage() {
     {
       icon: FaFacebook,
       label: "Facebook",
-      href: "#",
+      href: "https://web.facebook.com/carl.madrigal.504368/",
     },
     {
       icon: FaGithub,
       label: "GitHub",
-      href: "#",
+      href: "https://github.com/Madrigal-Carl",
     },
     {
       icon: FaLinkedin,
       label: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/carl-madrigal-60b2063b2/",
     },
   ];
 
@@ -154,6 +156,7 @@ export default function ContactPage() {
               <a
                 key={i}
                 href={link.href}
+                target="_blank"
                 className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-gray-100 dark:hover:bg-[#3c3c3c] transition-colors text-sm text-gray-700 dark:text-gray-300"
               >
                 <link.icon className="text-[20px] text-play-green dark:text-emerald-400" />
@@ -176,8 +179,8 @@ export default function ContactPage() {
                 <span>carlsalido.madrigal@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 px-3 py-2.5">
-                <FaRegAddressCard className="text-[18px] text-play-green dark:text-emerald-400" />
-                <span>Marinduque, Philippines</span>
+                <FiPhone className="text-[18px] text-play-green dark:text-emerald-400" />
+                <span>+63 964 178 7140</span>
               </div>
             </div>
           </div>
@@ -198,10 +201,14 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
-            <button className="flex items-center gap-2 bg-white text-play-green font-medium px-6 py-3 rounded-full text-sm hover:shadow-lg transition-shadow flex-shrink-0">
+            <a
+              href={resume}
+              download="Carl-Madrigal-Resume.pdf"
+              className="flex items-center gap-2 bg-white text-play-green font-medium px-6 py-3 rounded-full text-sm hover:shadow-lg transition-shadow flex-shrink-0"
+            >
               <FiDownload className="text-[18px]" />
               Download PDF
-            </button>
+            </a>
           </div>
         </div>
       </div>
