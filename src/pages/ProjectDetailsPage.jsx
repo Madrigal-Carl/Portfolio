@@ -38,6 +38,7 @@ export default function ProjectDetailsPage() {
     (p) => p.id !== project.id && p.category === project.category,
   ).slice(0, 6);
   const allScreenshots = [project.thumbnail, ...project.screenshots];
+  const hasLiveDemo = Boolean(project.liveDemo);
 
   return (
     <div className="max-w-5xl mx-auto pb-20 md:pb-4">
@@ -109,13 +110,20 @@ export default function ProjectDetailsPage() {
 
         <div className="flex gap-3 mb-6">
           <a
-            href={project.liveDemo}
-            className="flex-1 flex items-center justify-center gap-2 bg-play-green hover:bg-play-greenDark text-white font-medium py-3 rounded-lg text-sm transition-colors shadow-sm"
+            href={hasLiveDemo ? project.liveDemo : undefined}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex-1 flex items-center justify-center gap-2 font-medium py-3 rounded-lg text-sm transition-colors shadow-sm ${
+              hasLiveDemo
+                ? "bg-play-green hover:bg-play-greenDark text-white"
+                : "bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed pointer-events-none"
+            }`}
           >
             <span className="material-icons-outlined text-[18px]">
               open_in_new
             </span>
-            View Project
+
+            {hasLiveDemo ? "View Project" : "No Live Demo"}
           </a>
           <a
             href={project.github}
@@ -205,13 +213,20 @@ export default function ProjectDetailsPage() {
 
       <div className="fixed bottom-20 md:bottom-6 right-4 z-40">
         <a
-          href={project.liveDemo}
-          className="flex items-center gap-2 bg-play-green hover:bg-play-greenDark text-white font-medium px-5 py-3 rounded-full text-sm shadow-lg hover:shadow-xl transition-all"
+          href={hasLiveDemo ? project.liveDemo : undefined}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`flex items-center gap-2 font-medium px-5 py-3 rounded-full text-sm shadow-lg transition-all ${
+            hasLiveDemo
+              ? "bg-play-green hover:bg-play-greenDark text-white hover:shadow-xl"
+              : "bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed pointer-events-none"
+          }`}
         >
           <span className="material-icons-outlined text-[18px]">
             visibility
           </span>
-          View Project
+
+          {hasLiveDemo ? "View Project" : "No Demo"}
         </a>
       </div>
     </div>

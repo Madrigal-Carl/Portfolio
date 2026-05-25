@@ -6,7 +6,7 @@ export const PROJECTS = [
       "Full-stack e-commerce platform with real-time inventory management, Stripe payments, and multi-vendor support",
     longDescription:
       "A comprehensive e-commerce solution built with modern web technologies. Features include real-time inventory management, Stripe payment integration, admin dashboard, order tracking, and responsive design for all devices. The platform supports multi-vendor functionality and includes advanced search with filters.",
-    category: "fullstack",
+    category: "web",
     buildTime: "4 months",
     techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
     thumbnail: "http://static.photos/technology/320x240/10",
@@ -16,7 +16,7 @@ export const PROJECTS = [
       "http://static.photos/technology/640x360/13",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: true,
     recent: true,
     features: [
@@ -47,7 +47,7 @@ export const PROJECTS = [
       "http://static.photos/wellness/640x360/23",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: true,
     recent: false,
     features: [
@@ -66,7 +66,7 @@ export const PROJECTS = [
       "Open-source React component library with 50+ accessible, customizable components and dark mode support",
     longDescription:
       "An open-source UI component library for React with 50+ accessible, customizable components. Built with Tailwind CSS, supports dark mode, RTL, and comes with comprehensive documentation and Storybook stories.",
-    category: "opensource",
+    category: "web",
     buildTime: "6 months",
     techStack: ["React", "TypeScript", "Tailwind", "Storybook"],
     rating: 4.9,
@@ -78,7 +78,7 @@ export const PROJECTS = [
       "http://static.photos/minimal/640x360/33",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: false,
     recent: true,
     features: [
@@ -97,7 +97,7 @@ export const PROJECTS = [
       "Real-time collaborative note-taking app with markdown, code snippets, and offline sync",
     longDescription:
       "A collaborative note-taking application that supports real-time editing, markdown, code snippets, and file attachments. Features include workspaces, team sharing, version history, and offline mode with sync.",
-    category: "web",
+    category: "mobile",
     buildTime: "2 months",
     techStack: ["Next.js", "Socket.io", "PostgreSQL", "AWS"],
     rating: 4.7,
@@ -109,7 +109,7 @@ export const PROJECTS = [
       "http://static.photos/workspace/640x360/43",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: true,
     trending: false,
     recent: true,
@@ -129,7 +129,7 @@ export const PROJECTS = [
       "Drag-and-drop portfolio builder for developers with curated templates and one-click deploy",
     longDescription:
       "A drag-and-drop portfolio builder designed specifically for developers. Choose from curated templates, customize sections, and deploy a stunning portfolio in minutes. Supports custom domains and analytics.",
-    category: "uiux",
+    category: "web",
     buildTime: "5 months",
     techStack: ["Vue.js", "D3.js", "Express", "MongoDB"],
     rating: 4.5,
@@ -141,7 +141,7 @@ export const PROJECTS = [
       "http://static.photos/education/640x360/53",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: false,
     trending: false,
     recent: true,
@@ -161,7 +161,7 @@ export const PROJECTS = [
       "All-in-one CRM for freelancers with invoicing, time tracking, and automated payment reminders",
     longDescription:
       "An all-in-one CRM designed for freelancers to manage clients, invoices, projects, and communications. Features time tracking, contract templates, and automated payment reminders.",
-    category: "freelance",
+    category: "mobile",
     buildTime: "3.5 months",
     techStack: ["React", "GraphQL", "Prisma", "Stripe"],
     rating: 4.4,
@@ -173,7 +173,7 @@ export const PROJECTS = [
       "http://static.photos/office/640x360/63",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: false,
     recent: false,
     features: [
@@ -204,7 +204,7 @@ export const PROJECTS = [
       "http://static.photos/craft/640x360/73",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: false,
     recent: false,
     features: [
@@ -235,7 +235,7 @@ export const PROJECTS = [
       "http://static.photos/food/640x360/83",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: true,
     recent: true,
     features: [
@@ -254,7 +254,7 @@ export const PROJECTS = [
       "Minimal blogging platform for developers with MDX, syntax highlighting, and RSS feeds",
     longDescription:
       "A minimalist blogging engine built for developers who love to write. Supports MDX, code syntax highlighting, og-image generation, and RSS feeds. Self-hosted and lightweight.",
-    category: "opensource",
+    category: "web",
     buildTime: "1.5 months",
     techStack: ["Next.js", "MDX", "Vercel", "Tailwind"],
     rating: 4.6,
@@ -266,7 +266,7 @@ export const PROJECTS = [
       "http://static.photos/minimal/640x360/93",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: false,
     trending: false,
     recent: true,
@@ -286,7 +286,7 @@ export const PROJECTS = [
       "Kanban board with drag-and-drop, team collaboration, and GitHub/Slack integrations",
     longDescription:
       "A beautiful Kanban-style project management tool with drag-and-drop, team assignments, due dates, and integrations with GitHub, Slack, and more.",
-    category: "fullstack",
+    category: "web",
     buildTime: "3 months",
     techStack: ["React", "Node.js", "Socket.io", "Redis"],
     rating: 4.5,
@@ -298,7 +298,7 @@ export const PROJECTS = [
       "http://static.photos/workspace/640x360/103",
     ],
     github: "#",
-    liveDemo: "#",
+    liveDemo: "",
     featured: true,
     trending: false,
     recent: false,
