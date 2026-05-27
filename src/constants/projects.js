@@ -43,6 +43,7 @@ import {
   swift9,
 } from "@/assets/projects/swift";
 import { scanLogo, scan1, scan2, scan3 } from "@/assets/projects/scan";
+import { projLogo, proj1, proj2, proj3 } from "@/assets/projects/proj";
 
 export const PROJECTS = [
   {
@@ -282,6 +283,34 @@ export const PROJECTS = [
       "Full-stack development (frontend and backend implementation)",
       "System architecture, API design, and database design",
       "End-to-end feature development and integration",
+    ],
+  },
+  {
+    id: 9,
+    title: "Project Store: Portfolio Showcase Website",
+    description:
+      "A modern portfolio showcase website designed to display projects, skills, technologies, and development experience in an organized and interactive interface. The platform features responsive layouts, project galleries, category filtering, and detailed project presentation pages.",
+    category: "web",
+    buildTime: "1mo",
+    techStack: ["ReactJS", "Tailwind CSS", "JavaScript", "Git & GitHub"],
+    thumbnail: projLogo,
+    screenshots: [proj1, proj2, proj3],
+    github: "https://github.com/Madrigal-Carl/Portfolio",
+    liveDemo: "https://cm-portfolio-tan.vercel.app/",
+    featured: true,
+    completedAt: "2026-05-28",
+    features: [
+      "Responsive portfolio showcase",
+      "Project category filtering",
+      "Interactive project detail pages",
+      "Dynamic image gallery layouts",
+      "Modern UI/UX design",
+      "Technology stack presentation",
+    ],
+    contributions: [
+      "Frontend development and UI implementation",
+      "Responsive design and component architecture",
+      "Project layout design and feature integration",
     ],
   },
 ];

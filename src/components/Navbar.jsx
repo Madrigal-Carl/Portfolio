@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "@/contexts/ThemeContext";
 import { MdPlayArrow, MdLightMode, MdDarkMode } from "react-icons/md";
+import projLogo from "@/assets/logo.png";
 
 export default function Navbar() {
   const { dark, setDark } = useTheme();
@@ -20,9 +21,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 bg-white/95 dark:bg-[#1f1f1f]/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors">
       <div className="max-w-6xl mx-auto flex items-center h-14 md:h-[60px] px-4 sm:px-6 gap-4">
         <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="w-8 h-8 play-green-grad rounded-lg flex items-center justify-center">
-            <MdPlayArrow className="text-white text-[18px]" />
-          </div>
+          <img
+            src={projLogo}
+            alt="Project Store Logo"
+            className="w-8 h-8 text-[18px]"
+          />
           <span className="text-lg font-medium text-gray-900 dark:text-gray-100">
             Project Store
           </span>
