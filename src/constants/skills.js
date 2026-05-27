@@ -67,10 +67,7 @@ export const SKILLS = [
     icon: MdBuild,
     skills: [
       { name: "Git & GitHub", months: 18, label: "1.5 yrs" },
-      { name: "Docker", months: 6, label: "6 months" },
       { name: "Postman", months: 18, label: "1.5 yrs" },
-      { name: "Vercel", months: 3, label: "3 months" },
-      { name: "Render", months: 3, label: "3 months" },
     ],
   },
 ];

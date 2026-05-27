@@ -42,6 +42,7 @@ import {
   swift8,
   swift9,
 } from "@/assets/projects/swift";
+import { scanLogo, scan1, scan2, scan3 } from "@/assets/projects/scan";
 
 export const PROJECTS = [
   {
@@ -168,6 +169,43 @@ export const PROJECTS = [
   },
   {
     id: 5,
+    title: "CarScanAI: Car Brand Recognition System",
+    description:
+      "A web-based AI-powered car brand recognition system that identifies vehicle brands through image classification. The platform uses a trained machine learning model capable of recognizing 15+ car brands from uploaded vehicle images with real-time prediction results.",
+    category: "ai",
+    buildTime: "1mo",
+    techStack: [
+      "Python",
+      "TensorFlow",
+      "Pandas",
+      "HTML",
+      "Tailwind CSS",
+      "JavaScript",
+      "Git & GitHub",
+    ],
+    thumbnail: scanLogo,
+    screenshots: [scan1, scan2, scan3],
+    github: "https://github.com/Madrigal-Carl/CarScanAi",
+    liveDemo: "https://carscanai.onrender.com/",
+    featured: false,
+    completedAt: "2025-12-01",
+    features: [
+      "AI-powered car brand recognition",
+      "Image classification using machine learning",
+      "Support for 15+ car brands",
+      "Real-time prediction results",
+      "Dataset preprocessing and training pipeline",
+      "Responsive web interface",
+    ],
+    contributions: [
+      "Frontend development and UI integration",
+      "Backend development and AI model integration",
+      "Machine learning model training and dataset preprocessing",
+      "Deployment and system configuration",
+    ],
+  },
+  {
+    id: 6,
     title: "Tableo: Event Tabulation System",
     description:
       "A web-based event tabulation system designed for managing scoring and ranking of candidates in competitions. It supports judge score submissions, automated tallying, tie-break handling, and real-time result computation with exportable reports.",
@@ -201,7 +239,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "SwiftDocs: Online Document Request System",
     description:
       "A web-based document request and tracking system for students to request academic documents online. It features role-based access for admins, staff, RMO, and cashier. The system supports request tracking, document verification, payment processing, and release management, along with reporting and sales monitoring.",

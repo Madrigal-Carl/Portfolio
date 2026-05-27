@@ -1,4 +1,5 @@
 export const CATEGORIES = [
-  { id: "web", label: "Web Apps", icon: "language" },
-  { id: "mobile", label: "Mobile Apps", icon: "smartphone" },
+  { id: "web", label: "Web Apps" },
+  { id: "mobile", label: "Mobile Apps" },
+  { id: "ai", label: "AI & ML Systems" },
 ];
