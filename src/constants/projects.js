@@ -30,14 +30,14 @@ export const PROJECTS = [
     description:
       "S.H.A.P.E is a mobile learning application developed for students under Special Needs Education (SNED). The application allows students to access educational activities and interactive games even without internet connection through offline functionality. Integrated with a web management system, teachers can upload lessons, monitor student progress, manage curriculum and semesters, and track achievements through an awards system. The platform also includes automated grading and progress tracking features.",
     category: "mobile",
-    buildTime: "4 months",
+    buildTime: "4mo",
     techStack: ["Flutter", "Dart", "Flame Engine", "SQLite"],
     thumbnail: shapeLogo,
     screenshots: [shape8, shape9, shape10, shape11, shape12],
     github: "#",
     liveDemo: "",
     featured: true,
-    recent: true,
+    recent: false,
     features: [
       "Offline gameplay functionality",
       "Interactive educational activities",
@@ -51,7 +51,7 @@ export const PROJECTS = [
     description:
       "The S.H.A.P.E web application serves as the administrative and educational management platform for teachers and school administrators. Teachers can upload activities and lessons, monitor student performance, manage semesters and curriculum structures, and review automated grading results. The system also includes student tracking, awards management, and centralized content management integrated with the mobile application.",
     category: "web",
-    buildTime: "5 months",
+    buildTime: "5mo",
     techStack: [
       "Laravel",
       "Livewire",
@@ -65,7 +65,7 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "",
     featured: true,
-    recent: true,
+    recent: false,
     features: [
       "Lesson and activity management",
       "Student monitoring dashboard",
@@ -81,14 +81,14 @@ export const PROJECTS = [
     description:
       "An eCommerce web application with CMS, inventory management, and role-based functionalities for customers, cashiers, technicians, and administrators.",
     category: "web",
-    buildTime: "6 months",
+    buildTime: "5mo",
     techStack: ["Laravel", "Livewire", "PHP", "MySQL", "Git&GitHub", "VS Code"],
     thumbnail: chlLogo,
     screenshots: [chl1, chl2, chl3, chl4, chl5, chl6],
     github: "#",
     liveDemo: "",
     featured: true,
-    recent: true,
+    recent: false,
     features: [
       "Role-based access control",
       "Inventory management system",
@@ -106,14 +106,14 @@ export const PROJECTS = [
     description:
       "A web-based house assessment system that evaluates the vulnerability of one-storey houses against strong winds through a guided assessment process.",
     category: "web",
-    buildTime: "2 months",
+    buildTime: "2mo",
     techStack: ["Laravel", "Livewire", "PHP", "MySQL", "Git&GitHub", "VS Code"],
     thumbnail: rvsLogo,
     screenshots: [rvs1, rvs2, rvs3, rvs4],
     github: "#",
     liveDemo: "",
     featured: false,
-    recent: true,
+    recent: false,
     features: [
       "Guided house assessment form",
       "Automated vulnerability rating generation",

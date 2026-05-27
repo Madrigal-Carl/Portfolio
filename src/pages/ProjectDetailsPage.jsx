@@ -76,7 +76,7 @@ export default function ProjectDetailsPage() {
 
       <div className="px-4 sm:px-6">
         {/* Header */}
-        <div className="flex items-start gap-4 mb-6">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-4 mb-6">
           {/* Thumbnail */}
           <div className="w-24 h-24 md:w-28 md:h-28 rounded-2xl overflow-hidden bg-white dark:bg-[#2d2d2d] flex-shrink-0 shadow-sm">
             <img
@@ -87,7 +87,7 @@ export default function ProjectDetailsPage() {
           </div>
 
           {/* Title */}
-          <div className="flex-1 min-w-0 pt-1">
+          <div className="flex-1 min-w-0 pt-1 text-center md:text-left">
             <h1 className="text-xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 leading-tight">
               {project.title}
             </h1>
