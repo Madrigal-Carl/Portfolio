@@ -12,7 +12,7 @@ import {
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState(null);
-  const [activeTab, setActiveTab] = useState("recent");
+  const [activeTab, setActiveTab] = useState("all");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
