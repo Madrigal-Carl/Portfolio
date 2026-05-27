@@ -22,6 +22,14 @@ import {
   chl6,
 } from "@/assets/projects/chl";
 import { rvsLogo, rvs1, rvs2, rvs3, rvs4 } from "@/assets/projects/rvs";
+import {
+  tableoLogo,
+  tableo1,
+  tableo2,
+  tableo3,
+  tableo4,
+  tableo5,
+} from "@/assets/projects/tableo";
 
 export const PROJECTS = [
   {
@@ -78,7 +86,7 @@ export const PROJECTS = [
       "Awards and achievement management",
       "Semester and curriculum management",
       "Teacher and admin role management",
-      "Exportable reports (PDF/Excel)",
+      "Exportable reports (Docx)",
     ],
     contributions: [
       "Frontend development (UI implementation and integration)",
@@ -93,14 +101,7 @@ export const PROJECTS = [
       "An eCommerce web application with CMS, inventory management, and role-based functionalities for customers, cashiers, technicians, and administrators.",
     category: "web",
     buildTime: "5mo",
-    techStack: [
-      "Laravel",
-      "Livewire",
-      "PHP",
-      "MySQL",
-      "Git & GitHub",
-      "VS Code",
-    ],
+    techStack: ["Laravel", "Livewire", "PHP", "MySQL", "Git & GitHub"],
     thumbnail: chlLogo,
     screenshots: [chl1, chl2, chl3, chl4, chl5, chl6],
     github: "#",
@@ -115,9 +116,8 @@ export const PROJECTS = [
       "Service task management for technicians",
       "CMS for product and content management",
       "Order and staff monitoring dashboard",
-      "Exportable reports (CSV)",
+      "Exportable reports (Csv)",
     ],
-    methodology: "Agile Methodology",
     contributions: [
       "Frontend development (UI implementation and integration)",
       "Backend development (APIs, logic, and database design)",
@@ -131,14 +131,7 @@ export const PROJECTS = [
       "A web-based house assessment system that evaluates the vulnerability of one-storey houses against strong winds through a guided assessment process.",
     category: "web",
     buildTime: "2mo",
-    techStack: [
-      "Laravel",
-      "Livewire",
-      "PHP",
-      "MySQL",
-      "Git & GitHub",
-      "VS Code",
-    ],
+    techStack: ["Laravel", "Livewire", "PHP", "MySQL", "Git & GitHub"],
     thumbnail: rvsLogo,
     screenshots: [rvs1, rvs2, rvs3, rvs4],
     github: "#",
@@ -152,13 +145,45 @@ export const PROJECTS = [
       "Admin dashboard for monitoring assessments",
       "House location tracking",
       "Responsive web interface",
-      "Exportable reports (PDF/Excel)",
+      "Exportable reports (PDF)",
     ],
-    methodology: "Agile Methodology",
     contributions: [
       "Frontend development (UI implementation and integration)",
       "Backend development (APIs, logic, and database design)",
       "System design, deployment, and full implementation",
+    ],
+  },
+  {
+    id: 5,
+    title: "Tableo: Event Tabulation System",
+    description:
+      "A web-based event tabulation system designed for managing scoring and ranking of candidates in competitions. It supports judge score submissions, automated tallying, tie-break handling, and real-time result computation with exportable reports.",
+    category: "web",
+    buildTime: "2mo",
+    techStack: [
+      "ReactJS",
+      "ExpressJS",
+      "Sequelize",
+      "MySQL",
+      "JavaScript",
+      "Git & GitHub",
+    ],
+    thumbnail: tableoLogo,
+    screenshots: [tableo1, tableo2, tableo3, tableo4, tableo5],
+    github: "#",
+    liveDemo: "",
+    completedAt: "2026-03-01",
+    features: [
+      "Judge scoring and submission system",
+      "Automated score tallying and ranking",
+      "Tie-score handling and resolution",
+      "Candidate management system",
+      "Real-time results computation",
+      "Exportable reports (PDF)",
+    ],
+    contributions: [
+      "Backend development (API, scoring logic, and database design)",
+      "Frontend support and UI adjustments for core features",
     ],
   },
 ];
