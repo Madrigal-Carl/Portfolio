@@ -13,6 +13,7 @@ import {
   MdChevronLeft,
   MdChevronRight,
 } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 
 export default function ProjectDetailsPage() {
   const { id } = useParams();
@@ -262,10 +263,25 @@ export default function ProjectDetailsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {project.features.map((f, i) => (
               <div key={i} className="flex items-start gap-2.5 py-2">
-                <span className="text-play-green dark:text-emerald-400 mt-0.5 flex-shrink-0 text-sm">
-                  •
+                <GoDotFill className="text-play-green dark:text-emerald-400 mt-0.5 flex-shrink-0 text-sm" />
+                <span className="text-sm text-gray-700 dark:text-gray-300">
+                  {f}
                 </span>
+              </div>
+            ))}
+          </div>
+        </div>
 
+        {/* Contributions */}
+        <div className="mb-8">
+          <h2 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-3">
+            Contributions
+          </h2>
+
+          <div className="flex flex-col">
+            {project.contributions.map((f, i) => (
+              <div key={i} className="flex items-start gap-2.5 py-2">
+                <GoDotFill className="text-play-green dark:text-emerald-400 mt-0.5 flex-shrink-0 text-sm" />
                 <span className="text-sm text-gray-700 dark:text-gray-300">
                   {f}
                 </span>
