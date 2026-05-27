@@ -45,7 +45,7 @@ export default function AboutPage() {
   }, [selectedCert]);
 
   return (
-    <div className="max-w-4xl mx-auto pb-20 md:pb-4 px-4 sm:px-6 py-6 space-y-6">
+    <div className="max-w-6xl mx-auto pb-20 md:pb-4 px-4 sm:px-6 py-6 space-y-6">
       {/* Profile Header */}
       <div className="bg-gray-50 dark:bg-[#2d2d2d] rounded-2xl p-5 sm:p-7 border border-gray-200 dark:border-gray-700 fade-up">
         <div className="flex flex-col md:flex-row items-center gap-5">

@@ -76,7 +76,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="flex flex-col min-h-[calc(100vh-60px)] max-w-4xl mx-auto pb-20 md:pb-4 px-4 sm:px-6 py-6">
+    <div className="flex flex-col min-h-[calc(100vh-60px)] max-w-6xl mx-auto pb-20 md:pb-4 px-4 sm:px-6 py-6">
       <div className="text-center mb-8 fade-up">
         <h1 className="text-2xl md:text-3xl font-medium text-gray-900 dark:text-gray-100 mb-2">
           Get In Touch

@@ -63,7 +63,7 @@ export default function ProjectDetailsPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto pb-20 md:pb-4 mt-4 md:mt-0">
+    <div className="max-w-6xl mx-auto pb-20 md:pb-4 mt-4 md:mt-0">
       {/* Back Button */}
       <div className="hidden md:block px-4 sm:px-6">
         <button
