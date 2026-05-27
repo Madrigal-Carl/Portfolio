@@ -37,7 +37,7 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "",
     featured: true,
-    recent: false,
+    completedAt: "2025-12-01",
     features: [
       "Offline gameplay functionality",
       "Interactive educational activities",
@@ -65,7 +65,7 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "",
     featured: true,
-    recent: false,
+    completedAt: "2025-12-01",
     features: [
       "Lesson and activity management",
       "Student monitoring dashboard",
@@ -88,7 +88,7 @@ export const PROJECTS = [
     github: "#",
     liveDemo: "",
     featured: true,
-    recent: false,
+    completedAt: "2025-11-01",
     features: [
       "Role-based access control",
       "Inventory management system",
@@ -112,8 +112,7 @@ export const PROJECTS = [
     screenshots: [rvs1, rvs2, rvs3, rvs4],
     github: "#",
     liveDemo: "",
-    featured: false,
-    recent: false,
+    completedAt: "2025-12-01",
     features: [
       "Guided house assessment form",
       "Automated vulnerability rating generation",
@@ -126,3 +125,21 @@ export const PROJECTS = [
     methodology: "Agile Methodology",
   },
 ];
+
+export const isRecent = (completedAt) => {
+  const now = new Date();
+  const projectDate = new Date(completedAt);
+  const twoMonthsAgo = new Date(
+    now.getFullYear(),
+    now.getMonth() - 2,
+    now.getDate(),
+  );
+  return projectDate >= twoMonthsAgo;
+};
+
+export const getProjectsWithRecent = () => {
+  return PROJECTS.map((project) => ({
+    ...project,
+    recent: isRecent(project.completedAt),
+  }));
+};

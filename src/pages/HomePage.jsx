@@ -7,7 +7,7 @@ import FeaturedBanner from "@/components/FeaturedBanner";
 import ProjectRow from "@/components/ProjectRow";
 import SkillShowcase from "@/components/SkillShowcase";
 import { useRecentlyViewed } from "@/contexts/RecentlyViewedContext";
-import { PROJECTS } from "@/constants/projects";
+import { getProjectsWithRecent } from "@/constants/projects";
 import { MdHistory, MdNewReleases, MdTrendingUp, MdSend } from "react-icons/md";
 
 export default function HomePage() {
@@ -19,7 +19,7 @@ export default function HomePage() {
   }, []);
 
   const filtered = useMemo(() => {
-    let result = PROJECTS;
+    let result = getProjectsWithRecent();
     if (category) result = result.filter((p) => p.category === category);
     return result;
   }, [category]);
@@ -27,7 +27,7 @@ export default function HomePage() {
   const featured = filtered.filter((p) => p.featured);
   const recent = filtered.filter((p) => p.recent);
   const recentViewed = viewed
-    .map((id) => PROJECTS.find((p) => p.id === id))
+    .map((id) => getProjectsWithRecent().find((p) => p.id === id))
     .filter(Boolean)
     .slice(0, 5);
 

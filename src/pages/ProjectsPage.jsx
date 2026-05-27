@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
-import { PROJECTS } from "@/constants/projects";
+import { getProjectsWithRecent } from "@/constants/projects";
 import { CATEGORIES } from "@/constants/categories";
 import {
   MdArrowBack,
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
   }, []);
 
   const filtered = useMemo(() => {
-    let result = PROJECTS;
+    let result = getProjectsWithRecent();
     if (activeCategory)
       result = result.filter((p) => p.category === activeCategory);
     return result;
