@@ -260,8 +260,10 @@ export const isRecent = (completedAt) => {
 };
 
 export const getProjectsWithRecent = () => {
-  return PROJECTS.map((project) => ({
-    ...project,
-    recent: isRecent(project.completedAt),
-  }));
+  return [...PROJECTS]
+    .sort((a, b) => b.id - a.id)
+    .map((project) => ({
+      ...project,
+      recent: isRecent(project.completedAt),
+    }));
 };
