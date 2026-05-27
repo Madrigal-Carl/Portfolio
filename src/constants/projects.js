@@ -30,6 +30,18 @@ import {
   tableo4,
   tableo5,
 } from "@/assets/projects/tableo";
+import {
+  swiftLogo,
+  swift1,
+  swift2,
+  swift3,
+  swift4,
+  swift5,
+  swift6,
+  swift7,
+  swift8,
+  swift9,
+} from "@/assets/projects/swift";
 
 export const PROJECTS = [
   {
@@ -136,6 +148,7 @@ export const PROJECTS = [
     screenshots: [rvs1, rvs2, rvs3, rvs4],
     github: "#",
     liveDemo: "",
+    featured: false,
     completedAt: "2025-12-01",
     features: [
       "Guided house assessment form",
@@ -172,6 +185,7 @@ export const PROJECTS = [
     screenshots: [tableo1, tableo2, tableo3, tableo4, tableo5],
     github: "#",
     liveDemo: "",
+    featured: false,
     completedAt: "2026-03-01",
     features: [
       "Judge scoring and submission system",
@@ -184,6 +198,52 @@ export const PROJECTS = [
     contributions: [
       "Backend development (API, scoring logic, and database design)",
       "Frontend support and UI adjustments for core features",
+    ],
+  },
+  {
+    id: 6,
+    title: "SwiftDocs: Online Document Request System",
+    description:
+      "A web-based document request and tracking system for students to request academic documents online. It features role-based access for admins, staff, RMO, and cashier. The system supports request tracking, document verification, payment processing, and release management, along with reporting and sales monitoring.",
+    category: "web",
+    buildTime: "2mo",
+    techStack: [
+      "ReactJS",
+      "ExpressJS",
+      "Sequelize",
+      "MySQL",
+      "JavaScript",
+      "Git & GitHub",
+      "Docker",
+    ],
+    thumbnail: swiftLogo,
+    screenshots: [
+      swift1,
+      swift2,
+      swift3,
+      swift4,
+      swift5,
+      swift6,
+      swift7,
+      swift8,
+      swift9,
+    ],
+    github: "#",
+    liveDemo: "",
+    featured: true,
+    completedAt: "2026-04-01",
+    features: [
+      "Online document request system",
+      "Real-time request tracking",
+      "Role-based access control (Admin, Staff, RMO, Cashier)",
+      "Document verification and release workflow",
+      "Sales and analytics dashboard",
+      "Exportable reports (PDF)",
+    ],
+    contributions: [
+      "Full-stack development (frontend and backend implementation)",
+      "System architecture, API design, and database design",
+      "End-to-end feature development and integration",
     ],
   },
 ];
