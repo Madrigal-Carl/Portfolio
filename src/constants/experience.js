@@ -5,7 +5,15 @@ export const EXPERIENCE = [
     period: "Jan – April 2026",
     description:
       "Led a student development team in delivering multiple software projects during internship. Developed SwiftDocs for document request automation, built Tableo for event scoring and ranking systems, and contributed to a Power Automate solution for lead tracking and email automation using Agile methodology.",
-    tech: ["React.js", "Node.js", "Express.js", "MySQL", "Docker", "Agile"],
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Sequelize",
+      "Docker",
+      "Agile",
+    ],
   },
   {
     title: "Freelance Full-Stack Developer",
