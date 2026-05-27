@@ -44,10 +44,7 @@ export const SKILLS = [
   {
     category: "Mobile",
     icon: MdSmartphone,
-    skills: [
-      { name: "Dart", months: 6, label: "6 months" },
-      { name: "Android Studio", months: 2, label: "2 months" },
-    ],
+    skills: [{ name: "Dart", months: 6, label: "6 months" }],
   },
 
   {
@@ -68,6 +65,7 @@ export const SKILLS = [
     skills: [
       { name: "Git & GitHub", months: 18, label: "1.5 yrs" },
       { name: "Postman", months: 18, label: "1.5 yrs" },
+      { name: "Android Studio", months: 2, label: "2 months" },
     ],
   },
 ];

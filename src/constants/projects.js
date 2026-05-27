@@ -286,7 +286,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     title: "Project Store: Portfolio Showcase Website",
     description:
       "A modern portfolio showcase website designed to display projects, skills, technologies, and development experience in an organized and interactive interface. The platform features responsive layouts, project galleries, category filtering, and detailed project presentation pages.",
