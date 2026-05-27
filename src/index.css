@@ -125,3 +125,35 @@
   animation: progressFadeIn 0.4s ease-out forwards;
   opacity: 0;
 }
+/* Hide scrollbar by default */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+.hide-scroll {
+  scrollbar-width: none;
+}
+
+/* Show scrollbar only on md and larger */
+@media (min-width: 768px) {
+  .md\:hide-scrollbar-none::-webkit-scrollbar {
+    display: block;
+    height: 8px;
+  }
+
+  .md\:hide-scrollbar-none {
+    scrollbar-width: thin;
+  }
+
+  .md\:hide-scrollbar-none::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .md\:hide-scrollbar-none::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 999px;
+  }
+
+  .dark .md\:hide-scrollbar-none::-webkit-scrollbar-thumb {
+    background: #4b5563;
+  }
+}
