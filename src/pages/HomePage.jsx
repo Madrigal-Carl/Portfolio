@@ -34,7 +34,7 @@ export default function HomePage() {
   return (
     <div className="max-w-6xl mx-auto pb-20 md:pb-4">
       <CategoryTabs activeCategory={category} setActiveCategory={setCategory} />
-      <div className="py-6 space-y-6">
+      <div className="py-6 space-y-8">
         {loading ? (
           <div className="px-4 sm:px-6 space-y-8">
             <SkeletonRow />

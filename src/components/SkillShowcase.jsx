@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { SKILLS, MAX_MONTHS } from "@/constants/skills";
+import { SKILLS } from "@/constants/skills";
 import SectionHeader from "@/components/SectionHeader";
 import { MdCode } from "react-icons/md";
 
@@ -23,7 +23,7 @@ export default function SkillShowcase({ padded = false }) {
       ref={sectionRef}
       className={`mb-6 fade-up ${padded ? "px-4 sm:px-6" : ""}`}
     >
-      <SectionHeader icon={MdCode}>Expertise</SectionHeader>
+      <SectionHeader icon={MdCode}>Skills & Expertise</SectionHeader>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {SKILLS.map((group) => (
           <div
@@ -41,33 +41,27 @@ export default function SkillShowcase({ padded = false }) {
                 {group.skills.length} skills
               </span>
             </div>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {group.skills.map((skill, i) => {
-                const pct = Math.round((skill.months / MAX_MONTHS) * 100);
+                const Icon = skill.icon;
+
                 return (
                   <div
                     key={skill.name}
-                    className="progress-fade"
+                    className="progress-fade flex items-center justify-between rounded-lg border border-gray-100 dark:border-gray-800 px-3 py-2 hover:bg-gray-50 dark:hover:bg-[#252525] transition-colors"
                     style={{ animationDelay: `${i * 80}ms` }}
                   >
-                    <div className="flex items-center justify-between mb-1.5">
-                      <span className="text-xs font-medium text-gray-700 dark:text-gray-300">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <Icon className="text-play-green text-lg shrink-0" />
+
+                      <span className="text-xs font-medium text-gray-700 dark:text-gray-300 truncate">
                         {skill.name}
                       </span>
-                      <span className="text-[10px] font-semibold text-play-green dark:text-emerald-400 bg-green-100 dark:bg-green-900/30 px-2 py-0.5 rounded-full">
-                        {skill.label}
-                      </span>
                     </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                      <div
-                        className="h-2 rounded-full transition-all duration-1000 ease-out"
-                        style={{
-                          width: visible ? `${pct}%` : "0%",
-                          background:
-                            "linear-gradient(90deg, #01875f 0%, #34d399 100%)",
-                        }}
-                      ></div>
-                    </div>
+
+                    <span className="text-[10px] font-semibold text-play-green dark:text-emerald-400 bg-green-100 dark:bg-green-900/30 px-2 py-0.5 rounded-full whitespace-nowrap">
+                      {skill.level}
+                    </span>
                   </div>
                 );
               })}

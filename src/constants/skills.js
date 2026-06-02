@@ -7,17 +7,37 @@ import {
   MdBuild,
 } from "react-icons/md";
 
-export const MAX_MONTHS = 30;
+import {
+  SiReact,
+  SiHtml5,
+  SiTailwindcss,
+  SiJavascript,
+  SiNodedotjs,
+  SiExpress,
+  SiPhp,
+  SiLaravel,
+  SiLivewire,
+  SiFlutter,
+  SiDart,
+  SiMysql,
+  SiMongodb,
+  SiSqlite,
+  SiSequelize,
+  SiMongoose,
+  SiGit,
+  SiPostman,
+  SiAndroidstudio,
+} from "react-icons/si";
 
 export const SKILLS = [
   {
     category: "Frontend",
     icon: MdWeb,
     skills: [
-      { name: "ReactJS", months: 6, label: "6 months" },
-      { name: "HTML", months: 24, label: "2 yrs" },
-      { name: "TailwindCSS", months: 12, label: "1 yr" },
-      { name: "JavaScript", months: 8, label: "8 months" },
+      { name: "ReactJS", level: "Intermediate", icon: SiReact },
+      { name: "HTML", level: "Proficient", icon: SiHtml5 },
+      { name: "TailwindCSS", level: "Advanced", icon: SiTailwindcss },
+      { name: "JavaScript", level: "Intermediate", icon: SiJavascript },
     ],
   },
 
@@ -25,9 +45,9 @@ export const SKILLS = [
     category: "Backend",
     icon: MdDns,
     skills: [
-      { name: "NodeJS", months: 6, label: "6 months" },
-      { name: "ExpressJS", months: 6, label: "6 months" },
-      { name: "PHP", months: 6, label: "6 months" },
+      { name: "NodeJS", level: "Intermediate", icon: SiNodedotjs },
+      { name: "ExpressJS", level: "Intermediate", icon: SiExpress },
+      { name: "PHP", level: "Intermediate", icon: SiPhp },
     ],
   },
 
@@ -35,27 +55,27 @@ export const SKILLS = [
     category: "Frameworks",
     icon: MdLayers,
     skills: [
-      { name: "Laravel", months: 6, label: "6 months" },
-      { name: "Livewire", months: 4, label: "4 months" },
-      { name: "Flutter", months: 6, label: "6 months" },
+      { name: "Laravel", level: "Intermediate", icon: SiLaravel },
+      { name: "Livewire", level: "Intermediate", icon: SiLivewire },
+      { name: "Flutter", level: "Basic", icon: SiFlutter },
     ],
   },
 
   {
     category: "Mobile",
     icon: MdSmartphone,
-    skills: [{ name: "Dart", months: 6, label: "6 months" }],
+    skills: [{ name: "Dart", level: "Basic", icon: SiDart }],
   },
 
   {
     category: "Database",
     icon: MdStorage,
     skills: [
-      { name: "MySQL", months: 18, label: "1.5 yrs" },
-      { name: "MongoDB", months: 6, label: "6 months" },
-      { name: "SQLite", months: 3, label: "3 months" },
-      { name: "Sequelize ORM", months: 6, label: "6 months" },
-      { name: "Mongoose", months: 6, label: "6 months" },
+      { name: "MySQL", level: "Proficient", icon: SiMysql },
+      { name: "MongoDB", level: "Intermediate", icon: SiMongodb },
+      { name: "SQLite", level: "Basic", icon: SiSqlite },
+      { name: "Sequelize ORM", level: "Intermediate", icon: SiSequelize },
+      { name: "Mongoose", level: "Intermediate", icon: SiMongoose },
     ],
   },
 
@@ -63,9 +83,9 @@ export const SKILLS = [
     category: "Tools & Deployment",
     icon: MdBuild,
     skills: [
-      { name: "Git & GitHub", months: 18, label: "1.5 yrs" },
-      { name: "Postman", months: 18, label: "1.5 yrs" },
-      { name: "Android Studio", months: 2, label: "2 months" },
+      { name: "Git & GitHub", level: "Proficient", icon: SiGit },
+      { name: "Postman", level: "Proficient", icon: SiPostman },
+      { name: "Android Studio", level: "Basic", icon: SiAndroidstudio },
     ],
   },
 ];
