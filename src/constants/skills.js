@@ -71,7 +71,7 @@ export const SKILLS = [
     category: "Database",
     icon: MdStorage,
     skills: [
-      { name: "MySQL", level: "Proficient", icon: SiMysql },
+      { name: "MySQL", level: "Advanced", icon: SiMysql },
       { name: "MongoDB", level: "Intermediate", icon: SiMongodb },
       { name: "SQLite", level: "Basic", icon: SiSqlite },
       { name: "Sequelize ORM", level: "Intermediate", icon: SiSequelize },
