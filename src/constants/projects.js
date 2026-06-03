@@ -188,7 +188,7 @@ export const PROJECTS = [
     screenshots: [scan1, scan2, scan3],
     github: "https://github.com/Madrigal-Carl/CarScanAi",
     liveDemo: "https://carscanai.onrender.com/",
-    featured: false,
+    featured: true,
     completedAt: "2025-12-01",
     features: [
       "AI-powered car brand recognition",
@@ -297,7 +297,7 @@ export const PROJECTS = [
     screenshots: [proj1, proj2, proj3],
     github: "https://github.com/Madrigal-Carl/Portfolio",
     liveDemo: "https://cm-portfolio-tan.vercel.app/",
-    featured: true,
+    featured: false,
     completedAt: "2026-05-28",
     features: [
       "Responsive portfolio showcase",
