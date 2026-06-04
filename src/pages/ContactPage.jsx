@@ -224,6 +224,7 @@ export default function ContactPage() {
             </div>
             <a
               href="/Resume.pdf"
+              download
               className="flex items-center gap-2 bg-white text-play-green font-medium px-6 py-3 rounded-full text-sm hover:shadow-lg transition-shadow flex-shrink-0"
             >
               <FiDownload className="text-[18px]" />
