@@ -223,7 +223,7 @@ export default function ContactPage() {
               </div>
             </div>
             <a
-              href="/resume.pdf"
+              href="/RESUMEv2.pdf"
               download="Carl-Madrigal-Resume.pdf"
               className="flex items-center gap-2 bg-white text-play-green font-medium px-6 py-3 rounded-full text-sm hover:shadow-lg transition-shadow flex-shrink-0"
             >
