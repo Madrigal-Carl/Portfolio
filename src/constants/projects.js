@@ -243,7 +243,7 @@ export const PROJECTS = [
     id: 7,
     title: "SwiftDocs: Online Document Request System",
     description:
-      "A web-based document request and tracking system for students to request academic documents online. It features role-based access for admins, staff, RMO, and cashier. The system supports request tracking, document verification, payment processing, and release management, along with reporting and sales monitoring.",
+      "A web-based document request and tracking system for students to request academic documents online. It features role-based access for admins, RMO, and cashier. The system supports request tracking, document verification, payment processing, and release management, along with reporting and sales monitoring.",
     category: "web",
     buildTime: "2mo",
     techStack: [
