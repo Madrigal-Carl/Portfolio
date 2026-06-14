@@ -7,6 +7,7 @@ export const EXPERIENCE = [
       "Led a student development team in delivering multiple software projects during internship. Developed SwiftDocs for document request automation, built Tableo for event scoring and ranking systems, and contributed to a Power Automate solution for lead tracking and email automation using Agile methodology.",
     tech: [
       "React.js",
+      "Zustand",
       "Node.js",
       "Express.js",
       "MySQL",
