@@ -27,6 +27,7 @@ import {
   SiGit,
   SiPostman,
   SiAndroidstudio,
+  SiVercel,
 } from "react-icons/si";
 
 export const SKILLS = [
@@ -86,6 +87,7 @@ export const SKILLS = [
       { name: "Git & GitHub", level: "Proficient", icon: SiGit },
       { name: "Postman", level: "Proficient", icon: SiPostman },
       { name: "Android Studio", level: "Basic", icon: SiAndroidstudio },
+      { name: "Vercel", level: "Basic", icon: SiVercel },
     ],
   },
 ];
