@@ -44,6 +44,7 @@ import {
 } from "@/assets/projects/swift";
 import { scanLogo, scan1, scan2, scan3 } from "@/assets/projects/scan";
 import { projLogo, proj1, proj2, proj3 } from "@/assets/projects/proj";
+import { taskLogo, task1, task2, task3 } from "@/assets/projects/task";
 
 export const PROJECTS = [
   {
@@ -307,6 +308,49 @@ export const PROJECTS = [
       "Frontend development and UI implementation",
       "Responsive design and component architecture",
       "Project layout design inspired by Google Play Store UI",
+    ],
+  },
+  {
+    id: 9,
+    title: "Task Manager: Full-Stack CRUD Application",
+    description:
+      "A full-stack task management application built to practice modern React development patterns and backend API integration. The application supports complete CRUD operations, pagination, filtering, and task status management. It leverages TanStack Query for efficient server-state management and caching, while React Hook Form and Zod provide a robust and scalable form validation workflow. The project focuses on learning best practices for building responsive, maintainable, and data-driven web applications.",
+    category: "web",
+    buildTime: "1d",
+    techStack: [
+      "ReactJS",
+      "Tailwind CSS",
+      "TanStack Query",
+      "React Hook Form",
+      "Zod",
+      "JavaScript",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Mongoose",
+      "Git & GitHub",
+    ],
+    thumbnail: taskLogo,
+    screenshots: [task1, task2, task3],
+    github: "https://github.com/Madrigal-Carl/TaskManager",
+    liveDemo: "https://task-manager-iota-peach.vercel.app/",
+    featured: false,
+    completedAt: "2026-06-20",
+    features: [
+      "CRUD operations",
+      "Pagination, filtering, and search",
+      "Form validation",
+      "TanStack Query caching",
+      "Responsive design",
+      "REST API integration",
+    ],
+
+    contributions: [
+      "Frontend development",
+      "Backend development",
+      "Database integration",
+      "State management and caching",
+      "Form validation",
     ],
   },
 ];
