@@ -28,6 +28,8 @@ import {
   SiPostman,
   SiAndroidstudio,
   SiVercel,
+  SiRender,
+  SiCss,
 } from "react-icons/si";
 
 export const SKILLS = [
@@ -37,6 +39,7 @@ export const SKILLS = [
     skills: [
       { name: "ReactJS", level: "Intermediate", icon: SiReact },
       { name: "HTML", level: "Proficient", icon: SiHtml5 },
+      { name: "CSS", level: "Proficient", icon: SiCss },
       { name: "TailwindCSS", level: "Advanced", icon: SiTailwindcss },
       { name: "JavaScript", level: "Intermediate", icon: SiJavascript },
     ],
@@ -47,7 +50,6 @@ export const SKILLS = [
     icon: MdDns,
     skills: [
       { name: "NodeJS", level: "Intermediate", icon: SiNodedotjs },
-      { name: "ExpressJS", level: "Intermediate", icon: SiExpress },
       { name: "PHP", level: "Intermediate", icon: SiPhp },
     ],
   },
@@ -58,6 +60,7 @@ export const SKILLS = [
     skills: [
       { name: "Laravel", level: "Intermediate", icon: SiLaravel },
       { name: "Livewire", level: "Intermediate", icon: SiLivewire },
+      { name: "ExpressJS", level: "Intermediate", icon: SiExpress },
       { name: "Flutter", level: "Basic", icon: SiFlutter },
     ],
   },
@@ -88,6 +91,7 @@ export const SKILLS = [
       { name: "Postman", level: "Proficient", icon: SiPostman },
       { name: "Android Studio", level: "Basic", icon: SiAndroidstudio },
       { name: "Vercel", level: "Basic", icon: SiVercel },
+      { name: "Render", level: "Basic", icon: SiRender },
     ],
   },
 ];
