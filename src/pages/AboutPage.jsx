@@ -91,7 +91,7 @@ export default function AboutPage() {
 
         <div className="bg-gray-50 dark:bg-[#2d2d2d] rounded-xl p-4 sm:p-5 border border-gray-200 dark:border-gray-700">
           <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-            Hi! I'm Carl Salido Madrigal, an entry-level Full-Stack Developer
+            Hi! I'm Carl Salido Madrigal, an junior-level Full-Stack Developer
             from the Philippines specializing in React, Node.js, Laravel, and
             Flutter. I have hands-on experience building web and mobile
             applications through internships, freelance work, and academic
