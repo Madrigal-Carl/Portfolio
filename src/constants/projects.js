@@ -67,6 +67,7 @@ import {
   agri18,
   agri19,
   agri20,
+  agri21,
 } from "@/assets/projects/agri";
 
 export const PROJECTS = [
@@ -421,6 +422,7 @@ export const PROJECTS = [
       agri18,
       agri19,
       agri20,
+      agri21,
     ],
     github: "https://github.com/Madrigal-Carl/AgriCentral",
     liveDemo: "https://agri-central-five.vercel.app/",

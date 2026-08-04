@@ -19,6 +19,7 @@ import agri17 from "./agri17.png";
 import agri18 from "./agri18.png";
 import agri19 from "./agri19.png";
 import agri20 from "./agri20.png";
+import agri21 from "./agri21.png";
 
 export {
     agriLogo,
@@ -42,4 +43,5 @@ export {
     agri18,
     agri19,
     agri20,
+    agri21,
 };
